@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Salary Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>Salary Calculator</h1>
+  </header>
+  <main>
+    <h2>Add Employee</h2>
+    <form id="employeeForm">
+      <label>
+        First Name:
+        <input type="text" data-testid="firstNameInput">
+      </label>
+      <label>
+        Last Name:
+        <input type="text" data-testid="lastNameInput">
+      </label>
+      <label>
+        ID:
+        <input type="text" data-testid="idInput">
+      </label>
+      <label>
+        Title:
+        <input type="text" data-testid="titleInput">
+      </label>
+      <label>
+        Annual Salary:
+        <input type="text" data-testid="annaulSalaryInput">
+      </label>
+      <button type="submit" data-testid="submitButtonInput">Submit</button>
+    </form>
+    <h2>Employees</h2>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+      <td>Teairra</td>
+      <td>Craig</td>
+      <td>003</td>
+      <td>Manager</td>
+      <td>120000</td>
+      </tr>
+      <tr>
+        <td>Jessica</td>
+        <td>Williams</td>
+        <td>009</td>
+        <td>Designer</td>
+        <td>94000</td>
+      </tr>
+      <tr>
+        <td>Deangela</td>
+        <td>Daily</td>
+        <td>008</td>
+        <td>Data Engineer</td>
+        <td>98000</td>
+      </tr>
+      <tr>
+        <td>Barbara</td>
+        <td>Bey</td>
+        <td>010</td>
+        <td>Police Officer</td>
+        <td>76000</td>
+      </tr>
+      <tr>
+        <td>Sarah</td>
+        <td>Collins</td>
+        <td>011</td>
+        <td>Teacher</td>
+        <td>60000</td>
+      </tr>
+    </tbody>
+  </table>
+  </main>
+  <footer>
+    <p>Total Monthly<span id="totalMonthlyCost">$0</span></p>
+  </footer>
+  <script src="script-test.js"></script>
+</body>
+</html>
